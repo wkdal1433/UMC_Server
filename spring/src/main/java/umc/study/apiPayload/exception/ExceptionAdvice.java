@@ -1,8 +1,6 @@
 package umc.study.apiPayload.exception;
 
-import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
-import javax.validation.ConstraintViolationException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,6 +15,10 @@ import umc.study.apiPayload.ApiResponse;
 import umc.study.apiPayload.code.ErrorReasonDTO;
 import umc.study.apiPayload.code.status.ErrorStatus;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.validation.ConstraintViolationException;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Optional;
